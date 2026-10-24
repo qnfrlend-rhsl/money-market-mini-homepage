@@ -65,7 +65,7 @@ h1 {/* 머니마켓 소개 글 코드 */
 .intro { /* 좋은 상품을 합리적인 가격으로~ 관한 코드 */
     margin:0; 
     color:var(--muted); 
-    font-size:17px; 
+    font-size:14px; 
     font-weight: 800; 
     line-height:1.65; 
     color: #0f0f0f;
