@@ -1,0 +1,316 @@
+/* 
+body { 배경이미지
+  margin: 0;
+  font-family: system-ui, -apple-system, "Malgun Gothic", sans-serif;
+  color: var(--ink);
+  background: #f6f7f8;
+  background-image: url("배경이미지.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+ */
+
+/* 홈페이지 전체 너비와 배경 */
+.wrap {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+}
+
+main { padding:22px 18px 32px; 
+}
+ 
+header {
+  padding: 26px 20px 22px;
+  background: url("배경이미지.jpg") center / cover no-repeat;
+  border-bottom: 1px solid var(--line);
+}
+
+h1 {/* 머니마켓 소개 글 코드 */
+  margin: 17px 0 7px;
+  font-size: 30px;
+  line-height: 1.25;
+  color: #1d1d1d;
+}
+
+.brand { /* Money Market 영문 코드 */
+  display: inline-flex;/* 로고와 글자를 한 줄로 배치함 */
+  align-items: center;/* 로고와 글자르 세로 가운데로 맞춤 */
+  gap: 8px;/* 로고와 글자 사이를 8px 띄움 */
+  color: #faf9f9;/* 글자색을 주황색으로 설정 */
+  font-size: 35px;/* 글자 크기 설정 */
+  font-weight: 900;/* 글자 굵기 표시 */
+  letter-spacing: .04em;/* 글자 사이 간격을 조금 넓힘 */
+}
+
+.brand-logo {    /*//////////////////////////////로고 크기조절 */
+  width: 100px;/* 너비 */
+  height: 100px;/* 높이 */
+  object-fit: contain;/* 로고 이미지 찌그러지지 않도로고 표시 */
+}
+
+.brand-mark { 
+    display:grid;
+    place-items:center; 
+    width:32px; 
+    height:32px; 
+    border-radius:10px; 
+    background:var(--accent); 
+    color:#fff; 
+    font-size:18px; 
+}
+
+.intro { /* 좋은 상품을 합리적인 가격으로~ 관한 코드 */
+    margin:0; 
+    color:var(--muted); 
+    font-size:17px; 
+    font-weight: 800; 
+    line-height:1.65; 
+    color: #0f0f0f;
+}
+
+.cover {/* 대표사진영역 */
+  width:100%;/* 너비 */
+  margin-top: 18px;
+  height: 420px;/* 높이 */
+  border-radius: 16px;
+  background: #f1f1f1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #8b8b8b;
+  text-align: center;
+  padding: 0;
+}
+
+.cover img {/* 대표사진영역 이미지 사진 */
+  width: 110%;/* 너비 */
+  height: 100%;/* 높이 */
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.event { 
+    background:var(--soft); 
+    border:1px solid #ffdfd0; 
+    border-radius:14px; 
+    padding:15px; 
+    margin-bottom:26px; 
+}
+
+.event-label { 
+    display:inline-block; 
+    font-size:11px; 
+    font-weight:800; 
+    color:#c94b20; 
+    background:#ffe1d4; 
+    border-radius:6px; 
+    padding:4px 7px; 
+    margin-bottom:7px; 
+}
+
+
+.event h3 {/* 오픈 기념 특별 할인 */
+  font-size: 24px;       /* 글자 크기 */
+  font-weight: 800;      /* 글자 굵기 */
+  color: #ff6b35;        /* 글자 색상 */
+  margin: 0 0 5px;
+}
+
+.event p {
+  font-size: 16px;       /* 글자 크기 */
+  font-weight: 600;      /* 글자 굵기 */
+  color: #444444;        /* 글자 색상 */
+  line-height: 0.5;      /* 줄 간격 */
+}
+
+.actions {  /* 연락하기 문구 */
+    display:grid; 
+    grid-template-columns:repeat(3,1fr); 
+    gap:9px; 
+    margin-bottom:27px; 
+}
+
+.action { /* 문자하기, 카카오톡 문구 코드 */
+    padding:12px 6px; 
+    text-align:center; 
+    border:1px solid var(--line); 
+    border-radius:12px; 
+    font-size:13px; 
+    font-weight:700; 
+    background:#fff; 
+}
+    
+.action.primary { /* 전화하기 문구 코드 */
+    background:var(--accent);
+     border-color:var(--accent); 
+     color:#fff; 
+}
+
+.action .emoji { 
+    display:block; 
+    font-size:20px; 
+    margin-bottom:5px; 
+}
+
+.section-head { /* 상품 및 서비스 문구 코드 */
+    display:flex; 
+    justify-content:space-between; 
+    align-items:end; 
+    gap:10px; 
+    margin:0 0 13px; 
+}
+
+.hint { /* 가격 · 상세 설명 · 주문 문의 문구 코드 */
+    font-size:12px; 
+    color:var(--muted);
+    color: #272727;
+}
+
+.products { /*  문구 코드*/
+    display:grid;
+     grid-template-columns:repeat(2,minmax(0,1fr));
+     gap:12px; 
+    }
+
+.product { /*  문구 코드*/
+    border:1px solid var(--line); 
+    border-radius:14px; 
+    overflow:hidden; 
+    background:#fff; 
+    min-width:0; 
+}
+
+.product-image { /* 상품 사진 영역 문구 코드*/
+    aspect-ratio:1.2; 
+    background:#f0f0f0; 
+    display:grid; 
+    place-items:center; 
+    text-align:center; 
+    color:#888; 
+    font-size:12px; 
+    overflow:hidden; 
+}
+
+.product-body { /* 상품명 또는 서비스명 문구 코드 */
+    padding:12px; 
+}
+
+.product h3 { 
+    margin:0 0 6px; 
+    font-size:15px; 
+    line-height:1.4; 
+}
+
+.desc { /* 상품 특징과 상세 설명을~ 문구 코드 */
+    margin:0 0 10px; 
+    font-size:12px; 
+    color:var(--muted); 
+    line-height:1.55; 
+}
+
+.price { /* 상품 실제 가격 문구 코드 */
+    font-size:16px; 
+    font-weight:800; 
+}
+
+.old-price { /* 상품 전가격 문구 코드 */
+    margin-left:5px; 
+    color:#9ca3af; 
+    font-size:12px; 
+    text-decoration:line-through; 
+    font-weight:400; 
+}
+
+.buy { /* 구매 문의하기란 문구 코드 */
+    display:block; 
+    text-align:center; 
+    margin-top:11px; 
+    padding:10px 8px; 
+    border-radius:9px; 
+    background:#202124; 
+    color:#fff; 
+    font-size:13px; 
+    font-weight:700; 
+}
+
+:root { 
+    --accent:#ff6b35; 
+    --ink:#202124; 
+    --muted:#6b7280; 
+    --line:#e8e8e8; 
+    --soft:#fff5f0; 
+}
+
+* {
+    box-sizing:border-box; 
+}
+
+a { 
+    color:inherit; 
+    text-decoration:none; 
+}
+
+h2 { 
+    margin:0; 
+    font-size:19px; 
+}
+
+.video-box { 
+    margin-top:26px; 
+}
+
+.video-placeholder { 
+    margin-top:12px; 
+    aspect-ratio:16/9; 
+    background:#f0f0f0; 
+    border-radius:14px; 
+    display:grid; 
+    place-items:center; 
+    text-align:center; 
+    color:#777; 
+    padding:18px; 
+}
+
+.video-placeholder video {
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    border-radius:14px; 
+}
+
+.about {
+    margin-top:26px; 
+    padding:17px; 
+    border:1px solid var(--line); 
+    border-radius:14px; 
+}
+
+.about p { 
+    margin:8px 0 0; 
+    color:var(--muted); 
+    font-size:13px; 
+    line-height:1.7; 
+    white-space:pre-line; 
+}
+
+footer { 
+    padding:20px 18px 30px; 
+    background:#fafafa; border-top:1px solid var(--line); 
+    color:var(--muted); font-size:12px; 
+    line-height:1.7; 
+}
+
+footer strong { 
+    color:var(--ink); 
+}
+
+@media (max-width:420px) { 
+    h1{font-size:24px} .cover{height:155px} .products{gap:9px} .product-body{padding:10px} .product h3{font-size:14px} 
+}
+
+  
+
