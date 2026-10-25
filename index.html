@@ -32,7 +32,7 @@
       <section class="event">
         <span class="event-label">진행 중인 이벤트</span>
         <h3>오픈 기념 특별 할인</h3>
-        <p>오픈 이벤트 전품목 90% 할인 / 이벤트 종료 시 정상가격으로~</p>
+        <p>* 오픈 이벤트 전품목 90% 할인~<br>* 이벤트 종료 시 정상가격으로~</p>
       </section>
 
       <section>
@@ -42,33 +42,313 @@
         </div>
         <div class="products">
           <article class="product">
-            <div class="product-image">상품 사진 영역</div>
+            <img src="assets/product1.png" alt="상품 사진" class="product-image">
             <div class="product-body">
-              <h3>상품명 또는 서비스명</h3>
-              <p class="desc">상품 특징과 상세 설명을 간단하게 입력하세요.</p>
-              <div><span class="price">10,000원</span><span class="old-price">15,000원</span></div>
+              <h3>코인/업비트[무제한]</h3>
+              <p class="desc">- 지정종목/크로스종목 중 1택</p>
+              <p class="desc">- 24시간 365일 쉬지않고 돈 벌기</p>
+              <div><span class="price">350,000원</span><span class="old-price">3,500,000원</span></div>
               <a class="buy" href="sms:010-0000-0000?body=상품%20주문%20문의합니다">구매 문의하기</a>
             </div>
           </article>
+
           <article class="product">
-            <div class="product-image">상품 사진 영역</div>
+            <img src="assets/product2.png" alt="상품 사진" class="product-image">
             <div class="product-body">
-              <h3>상품명 또는 서비스명</h3>
-              <p class="desc">상품 특징과 상세 설명을 간단하게 입력하세요.</p>
+              <h3>코인/업비트[년간]</h3>
+              <p class="desc">지정종목/크로스종목 중 1택</p>
+              <p class="desc">1년간 마음껏 사용해보기.</p>
+              <div><span class="price">50,000원</span><span class="old-price">500,000원</span></div>
+              <a class="buy" href="sms:010-0000-0000?body=상품%20주문%20문의합니다">구매 문의하기</a>
+            </div>
+          </article>
+          
+          <article class="product">
+            <img src="assets/product3.png" alt="상품 사진" class="product-image">
+            <div class="product-body">
+              <h3>뉴스 알림[무제한]</h3>
+              <p class="desc">어떤 뉴스는 내맘대로~</p>
+              <p class="desc">중요 이벤트 뉴스 받아보기.</p>
+              <div><span class="price">50,000원</span><span class="old-price">500,000원</span></div>
+              <a class="buy" href="sms:010-0000-0000?body=상품%20주문%20문의합니다">구매 문의하기</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <img src="assets/product4.png" alt="상품 사진" class="product-image">
+            <div class="product-body">
+              <h3>주식/코인[제작]</h3>
+              <p class="desc">원하는 방식으로 제작</p>
+              <p class="desc">하나뿐인 나만의 프로그램!</p>
               <div><span class="price">가격 문의</span></div>
               <a class="buy" href="tel:010-0000-0000">전화로 문의하기</a>
             </div>
           </article>
         </div>
+      
       </section>
 
+      
+      <section class="downloads" id="downloads">
+        <div class="section-head">
+          <div>
+            <h2>📥 자료 다운로드 센터</h2>
+            <p class="downloads-intro">필요한 자료를 검색하고 편리하게 내려받으세요.</p>
+          </div>
+          <span class="hint">자료실</span>
+        </div>
+
+        <!-- 자료 검색 -->
+        <div class="download-tools">
+          <label class="search-box">
+            <span aria-hidden="true">🔎</span>
+            <input
+              type="search"
+              id="downloadSearch"
+              placeholder="자료 이름을 검색하세요."
+              aria-label="자료 검색"
+            >
+          </label>
+
+          <!-- 자료 분류 -->
+          <div class="download-categories" aria-label="자료 분류">
+            <button type="button" class="category-btn active" data-category="all">전체</button>
+            <button type="button" class="category-btn" data-category="guide">사용 설명서</button>
+            <button type="button" class="category-btn" data-category="program">프로그램</button>
+            <button type="button" class="category-btn" data-category="document">문서 및 기타</button>
+          </div>
+        </div>
+
+        <!-- 자료 카드 목록 -->
+        <div class="download-grid" id="downloadGrid">
+
+          <article class="download-card"
+            data-category="guide"
+            data-title="업비트 API 키 받는 방법"
+            data-date="2026-10-25">
+            <div class="download-card-top">
+              <span class="download-icon guide-icon">🔑</span>
+              <span class="download-badge latest-badge">최신 자료</span>
+            </div>
+            <div class="download-card-body">
+              <span class="download-type">사용 설명서</span>
+              <h3>업비트 API 키 받는 방법</h3>
+              <p>API 키 발급 및 설정 방법을 확인하세요.</p>
+              <a class="download-link"
+                href="https://drive.google.com/file/d/1EbzKpchaA3m6lijSgaidNfJoTnnlzylb/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">
+                자료 열기 <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="download-card"
+            data-category="guide"
+            data-title="디스코드 웹훅 주소 만들기 방법"
+            data-date="2026-10-25">
+            <div class="download-card-top">
+              <span class="download-icon discord-icon">💬</span>
+              <span class="download-badge latest-badge">최신 자료</span>
+            </div>
+            <div class="download-card-body">
+              <span class="download-type">사용 설명서</span>
+              <h3>디스코드 웹훅 주소 만들기 방법</h3>
+              <p>디스코드 웹훅 주소 생성 방법을 확인하세요.</p>
+              <a class="download-link"
+                href="https://drive.google.com/file/d/1v5qk25El4oHlbM7nXaKLZeFWJp6z9J5T/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">
+                자료 열기 <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="download-card"
+            data-category="guide"
+            data-title="내 PC ID 찾기"
+            data-date="2026-10-25">
+            <div class="download-card-top">
+              <span class="download-icon pc-icon">🖥️</span>
+              <span class="download-badge latest-badge">최신 자료</span>
+            </div>
+            <div class="download-card-body">
+              <span class="download-type">사용 설명서</span>
+              <h3>내 PC ID 찾기</h3>
+              <p>내 컴퓨터의 PC ID 확인 방법을 알아보세요.</p>
+              <a class="download-link"
+                href="https://drive.google.com/file/d/1W3t7FDkWMy8dsyzLQ56lK0V1z8OZEe90/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">
+                자료 열기 <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="download-empty" id="downloadEmpty" hidden>
+          검색 결과가 없습니다. 다른 검색어를 입력해 보세요.
+        </p>
+        <p class="download-count" id="downloadCount" aria-live="polite">
+          총 자료 3개
+        </p>
+      </section>
+
+      <script>
+        (() => {
+          const section = document.getElementById('downloads');
+          if (!section || section.dataset.initialized === 'true') return;
+          section.dataset.initialized = 'true';
+
+          const searchInput = section.querySelector('#downloadSearch');
+          const cards = [...section.querySelectorAll('.download-card')];
+          const categoryButtons = [...section.querySelectorAll('.category-btn')];
+          const emptyMessage = section.querySelector('#downloadEmpty');
+          const countMessage = section.querySelector('#downloadCount');
+          let selectedCategory = 'all';
+
+          function filterDownloads() {
+            const keyword = searchInput.value.trim().toLocaleLowerCase('ko');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+              const matchesKeyword =
+                card.dataset.title.toLocaleLowerCase('ko').includes(keyword);
+              const matchesCategory =
+                selectedCategory === 'all' ||
+                card.dataset.category === selectedCategory;
+              const visible = matchesKeyword && matchesCategory;
+
+              card.hidden = !visible;
+              if (visible) visibleCount++;
+            });
+
+            emptyMessage.hidden = visibleCount !== 0;
+            countMessage.textContent = `총 자료 ${visibleCount}개`;
+          }
+
+          searchInput.addEventListener('input', filterDownloads);
+
+          categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              selectedCategory = button.dataset.category;
+
+              categoryButtons.forEach(item => {
+                const active = item === button;
+                item.classList.toggle('active', active);
+                item.setAttribute('aria-pressed', String(active));
+              });
+
+              filterDownloads();
+            });
+
+            button.setAttribute(
+              'aria-pressed',
+              String(button.dataset.category === 'all')
+            );
+          });
+
+          // 등록일이 가장 최근인 자료에 최신 배지를 표시합니다.
+          const latestDate = cards.reduce(
+            (latest, card) =>
+              card.dataset.date > latest ? card.dataset.date : latest,
+            ''
+          );
+
+          cards.forEach(card => {
+            const badge = card.querySelector('.latest-badge');
+            if (badge) {
+              badge.hidden = card.dataset.date !== latestDate;
+            }
+          });
+
+          filterDownloads();
+        })();
+      </script>
+
+
+      <!-- 파일 다운로드 센터 시작
+      
+      <section class="downloads">
+        <div class="section-head">
+          <h2>📥 일반 자료실</h2>
+          <span class="hint">필요한 자료를 선택하세요.</span>
+        </div>
+
+        <ul class="download-list">
+          <li>
+            <a href="https://drive.google.com/file/d/1EbzKpchaA3m6lijSgaidNfJoTnnlzylb/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              📄 업비트 API 키 받는 방법
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1v5qk25El4oHlbM7nXaKLZeFWJp6z9J5T/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              📄 디스코드 웹훅 주소 만들기 방법
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1W3t7FDkWMy8dsyzLQ56lK0V1z8OZEe90/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              📄 내 PC ID 찾기
+            </a>
+          </li>
+        </ul>
+      </section>
+       -->
+
+      <!-- 파일 다운로드 센터 끝 -->
+
+      
       <section class="video-box">
         <div class="section-head">
-          <h2>상품 동영상</h2>
-          <span class="hint">선택 사항</span>
+          <h2>🎬 동영상 자료실</h2>
+          <span class="hint">동영상 2개</span>
         </div>
-        <div class="video-placeholder">동영상 영역<br>상품 소개 동영상을 추가할 수 있습니다.</div>
+
+        <div class="video-library">
+          <article class="video-card">
+            <h3>힘내요! ^^</h3>
+            <video
+              controls
+              preload="metadata"
+              playsinline
+              style="
+                display:block;
+                width:100%;
+                max-width:100%;
+                margin-top:12px;
+                border:3px solid #ffffff;
+                border-radius:12px;
+                box-shadow:0 2px 8px rgba(0,0,0,0.15);
+                box-sizing:border-box;
+              "
+            >
+              <source src="assets/videos/myvideo1.mp4" type="video/mp4">
+              이 브라우저는 동영상을 지원하지 않습니다.
+            </video>
+          </article>
+
+          <article class="video-card">
+            <h3>자동프로그램 실행 영상</h3>
+            <video
+              controls
+              preload="metadata"
+              playsinline
+              style="
+                display:block;
+                width:100%;
+                max-width:100%;
+                margin-top:12px;
+                border:3px solid #ffffff;
+                border-radius:12px;
+                box-shadow:0 2px 8px rgba(0,0,0,0.15);
+                box-sizing:border-box;
+              "
+            >
+              <source src="assets/videos/myvideo2.mp4" type="video/mp4">
+              이 브라우저는 동영상을 지원하지 않습니다.
+            </video>
+          </article>
+        </div>
       </section>
+
 
       <section class="about">
         <h2>업체 소개 및 이용 안내</h2>
@@ -81,7 +361,7 @@
       주소: 강원특별차치도 춘천시 세실로 220<br>
       사업자등록번호: 304-17-04231 / 대표: 김상국<br>
       연락처: 010-8429-5368<br>
-      <span>※ 온라인 결제 없이 전화·문자·카카오톡으로 주문을 받는 기본 템플릿입니다.</span>
+      <span>※ 온라인 결제 없이 전화·문자·카카오톡으로 주문 및 문의받는 템플릿입니다.</span>
     </footer>
   </div>
 

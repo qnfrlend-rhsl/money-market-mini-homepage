@@ -28,11 +28,11 @@ header {
   border-bottom: 1px solid var(--line);
 }
 
-h1 {/* 머니마켓 소개 글 코드 */
+h1 {/* 머니마켓을 소개합니다. 문구 코드 */
   margin: 17px 0 7px;
   font-size: 30px;
   line-height: 1.25;
-  color: #1d1d1d;
+  color: #252424;
 }
 
 .brand { /* Money Market 영문 코드 */
@@ -68,7 +68,7 @@ h1 {/* 머니마켓 소개 글 코드 */
     font-size:14px; 
     font-weight: 800; 
     line-height:1.65; 
-    color: #0f0f0f;
+    color: #ffffff;
 }
 
 .cover {/* 대표사진영역 */
@@ -101,17 +101,17 @@ h1 {/* 머니마켓 소개 글 코드 */
     margin-bottom:26px; 
 }
 
-.event-label { 
-    display:inline-block; 
-    font-size:11px; 
-    font-weight:800; 
-    color:#c94b20; 
-    background:#ffe1d4; 
-    border-radius:6px; 
-    padding:4px 7px; 
-    margin-bottom:7px; 
+.event-label {
+    display:inline-block;
+    font-size:11px;
+    font-weight:800;
+    color:#c94b20;
+    background:#ffe1d4;
+    border-radius:6px;
+    padding:7px 10px;
+    line-height:1.5;
+    margin-bottom:7px;
 }
-
 
 .event h3 {/* 오픈 기념 특별 할인 */
   font-size: 24px;       /* 글자 크기 */
@@ -124,7 +124,7 @@ h1 {/* 머니마켓 소개 글 코드 */
   font-size: 16px;       /* 글자 크기 */
   font-weight: 600;      /* 글자 굵기 */
   color: #444444;        /* 글자 색상 */
-  line-height: 0.5;      /* 줄 간격 */
+  line-height: 2;      /* 줄 간격 */
 }
 
 .actions {  /* 연락하기 문구 */
@@ -209,20 +209,21 @@ h1 {/* 머니마켓 소개 글 코드 */
     margin:0 0 10px; 
     font-size:12px; 
     color:var(--muted); 
-    line-height:1.55; 
+    line-height:1; /* - 문구로 되어있는 글자간 간격을 조절~ 문구 코드 */
 }
 
 .price { /* 상품 실제 가격 문구 코드 */
-    font-size:16px; 
-    font-weight:800; 
+    color: #ff0000;     /* 판매 가격 색상 */
+    font-size:16px;       /* 판매 가격 글자 크기 */
+    font-weight:800;      /* 굵기: 400 보통, 700 굵게 */ 
 }
 
 .old-price { /* 상품 전가격 문구 코드 */
     margin-left:5px; 
-    color:#9ca3af; 
-    font-size:12px; 
+    color:#9ca3af;      /* 기존 가격 색상 */
+    font-size:12px;       /* 기존 가격 글자 크기 */
     text-decoration:line-through; 
-    font-weight:400; 
+    font-weight:400;      /* 기존 가격 굵기 */
 }
 
 .buy { /* 구매 문의하기란 문구 코드 */
@@ -312,5 +313,295 @@ footer strong {
     h1{font-size:24px} .cover{height:155px} .products{gap:9px} .product-body{padding:10px} .product h3{font-size:14px} 
 }
 
-  
 
+/* ==============================
+   머니마켓 자료 다운로드 센터 시작
+   ============================== */
+
+.downloads {
+  margin: 36px 0;
+  padding: 26px;
+  background: #fffaf7;
+  border: 1px solid #ffe5d7;
+  border-radius: 22px;
+  box-sizing: border-box;
+}
+
+.downloads .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.downloads .section-head h2 {
+  margin: 0;
+  color: #282828;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.downloads-intro {
+  margin: 9px 0 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.downloads .hint {
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #ff6b35;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* 검색 및 분류 */
+.download-tools {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 15px;
+  background: #fff;
+  border: 1px solid #eadfd9;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.search-box input {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #333;
+  font: inherit;
+  font-size: 14px;
+}
+
+.search-box:focus-within {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.12);
+}
+
+.download-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-btn {
+  padding: 9px 15px;
+  border: 1px solid #e9ded8;
+  border-radius: 22px;
+  background: #fff;
+  color: #555;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: #ff6b35;
+  border-color: #ff6b35;
+  color: #fff;
+}
+
+/* 자료 카드 그리드 */
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.download-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #eee4de;
+  border-radius: 17px;
+  box-shadow: 0 5px 16px rgba(65, 39, 25, 0.045);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(65, 39, 25, 0.10);
+}
+
+.download-card[hidden],
+.latest-badge[hidden],
+.download-empty[hidden] {
+  display: none !important;
+}
+
+.download-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 92px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #fff0e7, #fff9f4);
+}
+
+.download-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  font-size: 27px;
+}
+
+.guide-icon {
+  background: #ffe1d1;
+}
+
+.discord-icon {
+  background: #e9e4ff;
+}
+
+.pc-icon {
+  background: #dff3e7;
+}
+
+.download-badge {
+  padding: 6px 9px;
+  border-radius: 20px;
+  background: #fff0e8;
+  color: #e65b27;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.download-card-body {
+  padding: 19px;
+}
+
+.download-type {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: #e9652b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.download-card-body h3 {
+  margin: 0 0 10px;
+  color: #292929;
+  font-size: 17px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.download-card-body p {
+  min-height: 42px;
+  margin: 0 0 18px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.download-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 10px;
+  background: #ff6b35;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.download-link:hover {
+  background: #e95723;
+}
+
+.download-empty {
+  padding: 24px 10px;
+  color: #777;
+  text-align: center;
+  font-size: 14px;
+}
+
+.download-count {
+  margin: 18px 0 0;
+  color: #888;
+  text-align: right;
+  font-size: 12px;
+}
+
+/* 태블릿 */
+@media (max-width: 850px) {
+  .download-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .downloads {
+    padding: 22px;
+  }
+}
+
+/* 휴대폰 */
+@media (max-width: 560px) {
+  .downloads {
+    margin: 25px 0;
+    padding: 17px;
+    border-radius: 17px;
+  }
+
+  .downloads .section-head h2 {
+    font-size: 21px;
+  }
+
+  .download-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .download-card-top {
+    min-height: 78px;
+    padding: 16px;
+  }
+
+  .download-card-body {
+    padding: 16px;
+  }
+
+  .download-card-body p {
+    min-height: 0;
+  }
+
+  .category-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* ==============================
+   머니마켓 자료 다운로드 센터 끝
+   ============================== */
