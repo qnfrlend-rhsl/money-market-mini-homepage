@@ -185,14 +185,12 @@ h1 {/* 머니마켓을 소개합니다. 문구 코드 */
 }
 
 .product-image { /* 상품 사진 영역 문구 코드*/
-    aspect-ratio:1.2; 
-    background:#f0f0f0; 
-    display:grid; 
-    place-items:center; 
-    text-align:center; 
-    color:#888; 
-    font-size:12px; 
-    overflow:hidden; 
+    width: 100%;
+    max-width: 400px;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
 }
 
 .product-body { /* 상품명 또는 서비스명 문구 코드 */
