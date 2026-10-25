@@ -32,7 +32,7 @@ h1 {/* 머니마켓을 소개합니다. 문구 코드 */
   margin: 17px 0 7px;
   font-size: 30px;
   line-height: 1.25;
-  color: #252424;
+  color: #fffcfc;
 }
 
 .brand { /* Money Market 영문 코드 */
@@ -68,7 +68,7 @@ h1 {/* 머니마켓을 소개합니다. 문구 코드 */
     font-size:14px; 
     font-weight: 800; 
     line-height:1.65; 
-    color: #ffffff;
+    color: #271801;
 }
 
 .cover {/* 대표사진영역 */
