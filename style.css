@@ -29,9 +29,9 @@ header {
 }
 
 h1 {/* 머니마켓을 소개합니다. 문구 코드 */
-  margin: 17px 0 7px;
+  margin: 0px 0 7px;/* Money Market 영문과 머니마켓을 소개합니다. 간격을 줄이는 코드 */
   font-size: 30px;
-  line-height: 1.25;
+  line-height: 1;
   color: #fffcfc;
 }
 
@@ -42,7 +42,7 @@ h1 {/* 머니마켓을 소개합니다. 문구 코드 */
   color: #faf9f9;/* 글자색을 주황색으로 설정 */
   font-size: 35px;/* 글자 크기 설정 */
   font-weight: 900;/* 글자 굵기 표시 */
-  letter-spacing: .04em;/* 글자 사이 간격을 조금 넓힘 */
+  letter-spacing: -0.1em;/* 글자 사이 간격을 조금 넓힘 */
 }
 
 .brand-logo {    /*//////////////////////////////로고 크기조절 */
